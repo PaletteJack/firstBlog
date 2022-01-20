@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "dotenv": "^11.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongodb": "^4.2.2",
+    "mongoose": "^6.1.2",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0"
+  },
+  "engines": {
+    "node": "12.22.5"
+  },
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Simple blog website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Palette Jack",
+  "license": "ISC",
+  "devDependencies": {},
+  "keywords": []
+}

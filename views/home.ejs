@@ -1,0 +1,32 @@
+<%- include('header')-%>
+<div>
+  <h1 id="title-text">PJ's blog</h1>
+</div>
+
+<div class="div-mid blog-title">
+  <h4>Intro: What my blog is about</h4>
+</div>
+<div class="div-mid blog-body">
+  <p class="body-text fontStuff">
+    You have fifteen seconds to snag your reader’s attention.
+    If your intro doesn’t draw him in, he’s likely to become
+    one of the 55 percent of visitors who read your post for
+    fifteen seconds or less and then navigate away. Knowing
+    how to write an introduction that hooks your reader is
+    essential to overcoming that daunting statistic.
+  </p>
+</div>
+<% blog.reverse() %>
+<% blog.forEach(function(blog){ %>
+  <div class="div-mid blog-title">
+    <h4><%=blog.title%> | <%=blog.date%></h4>
+  </div>
+  <div class="div-mid blog-body">
+    <p class="body-text crop fontStuff">
+      <%=blog.body%>
+    </p>
+    <a class="left-pad" href="/posts/<%=blog.title%>">Read more</a>
+  </div>
+<% }); %>
+
+<%- include('footer')-%>

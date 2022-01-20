@@ -1,0 +1,182 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.page-content {
+  flex: 1 0 auto;
+}
+
+a {color: inherit;}
+
+a:hover {color: #1abc9c;}
+
+pre {
+  white-space: pre-wrap;
+}
+
+/*---------------------DM Button---------------------*/
+#dmSwitch {
+  display: inline-block;
+  position: fixed;
+  bottom: 5rem;
+  background-color: #D4ECDD;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+  width: 12rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin: 5px;
+}
+#dmSwitch span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+#dmSwitch span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.2s;
+}
+#dmSwitch:hover {
+  background-color: #152D35;
+  color: #eeeeee;
+}
+#dmSwitch:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*---------------------Default btn---------------------*/
+
+.default-btn {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 14px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.default-btn:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.default-btn:active {
+	position:relative;
+	top:1px;
+}
+
+/*---------------------Nav bar---------------------*/
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.container-fluid {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar-nav  li a:hover {color: #1abc9c !important;}
+
+.navbar-nav  li a {font-size: 1rem;}
+
+/*---------------------Text formatting---------------------*/
+
+#title-text{
+  width: 90rem;
+  margin: 2rem auto;
+  text-align: justify;
+  font-size: 3rem;
+}
+
+.fontStuff {
+  font-size: 1.25rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.div-mid {
+  display: flex;
+  width: 90rem;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.body-text {padding-bottom: 2rem;}
+
+.top-pad {padding-top: 3rem;}
+
+.left-pad {margin-left: .8rem; height: 1.15rem;}
+
+
+/*---------------------Night Theme---------------------*/
+
+.dark-bg {
+  background-color: #345B63;
+  color: #DBE6FD;
+}
+
+.bg-dark {background-color: #152D35 !important;}
+
+/*---------------------Text Behav---------------------*/
+.crop {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 70rem;
+  text-overflow: ellipsis;
+}
+
+/*---------------------Footer---------------------*/
+
+.footer-padding {padding-bottom: 60px;}
+
+.footer {
+  display: flex;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+}
+
+/*---------------------Transitions---------------------*/
+
+.transit {transition: all 0.5s;}
+
+/*---------------------Compose input---------------------*/
+
+.tInput {border-radius: 5px;}
+
+/*---------------------Image formatting---------------------*/
+
+.contact-img {
+  width:7%;
+  margin: 0 1.5rem;
+}
+
+.admin-img {
+  width:12%;
+  margin: 0 1.5rem;
+}

@@ -1,0 +1,29 @@
+<%- include('header')-%>
+
+<div class="div-mid blog-title">
+  <h2 class="top-pad">Update Post: <%=post.title%></h2>
+</div>
+<div class="div-mid">
+  <form id='updateForm' action="/updateForm" method="post"></form>
+  <form id='deleteForm' action="/delete" method="post"></form>
+  <fieldset>
+    <br>
+    <input class="tInput" type="text" name="uTitle" value="<%=post.title%>" disabled>
+    <input form="updateForm" class="tInput" type="text" name="uDate" value="<%=post.date%>">
+    <br>
+    <br>
+    <textarea form="updateForm" class="tInput" style="border: solid 2px;" name="updateText" rows="8" cols="90" placeholder="What's on your mind?">
+<%=post.body%>
+    </textarea>
+    <br>
+    <button form="updateForm" class="default-btn" type="submit" name="submit">Submit</button>
+    <button form="deleteForm" class="default-btn" type="submit" name="delete" style="margin-left:1rem;" onclick="return confirm('Are you sure?')">Delete</button>
+  </fieldset>
+
+  <form class="" action="/updateForm" method="post">
+  </form>
+  <form class="" action="/delete" method="post">
+  </form>
+</div>
+
+<%- include('footer')-%>

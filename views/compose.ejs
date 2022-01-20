@@ -1,0 +1,19 @@
+<%- include('header')-%>
+
+<div class="div-mid blog-title">
+  <h2 class="top-pad">Compose Post</h2>
+</div>
+<div class="div-mid">
+  <form class="" action="/compose" method="post">
+    <br>
+    <input class="tInput" type="text" name="cTitle" placeholder="Title">
+    <input class="tInput" type="text" name="cDate" placeholder="Date">
+    <br>
+    <br>
+    <textarea class="tInput" style="border: solid 2px;" name="bloggerText" rows="8" cols="90" placeholder="What's on your mind?"></textarea>
+    <br>
+    <button class="default-btn" type="submit" name="submit">Submit</button>
+  </form>
+</div>
+
+<%- include('footer')-%>
