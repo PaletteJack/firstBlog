@@ -154,6 +154,11 @@ app.route('/login')
     failureRedirect: '/login',
   }))
 
+app.get('/logout', function(req, res){
+  req.logout();
+  res.redirect('/');
+});
+
 app.all("*", (req, res) => {
   if (res.status(404)) {
     res.render('404',{user:req.user});
