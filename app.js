@@ -168,6 +168,6 @@ app.all("*", (req, res) => {
   }
 });
 
-app.listen(process.env.PORT || 3000, function(){
+app.listen(4000, function(){
   console.log("Server started");
 });
