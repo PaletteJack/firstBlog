@@ -108,13 +108,15 @@ app.route('/update')
     if (req.body.Title == "") {
       res.redirect('/update');
     }else {
+
       Post.findOne({title: req.body.Title}, function (err, post) {
         if (err) {
           console.log(err);
-          res.render('issue',{user: req.user});
-        } else {
+        } else if (post) {
           cID = post._id;
           res.render('updateForm', {post: post, user: req.user});
+        } else {
+          res.render('issue',{user: req.user});
         }
       })
     }
@@ -122,6 +124,7 @@ app.route('/update')
 
 app.post('/updateForm', function(req,res){
   uPost = req.body;
+
   Post.updateOne({_id: cID},{date: uPost.uDate, body: uPost.updateText}, function(err, result){
     if (err) {
       console.log(err);

@@ -6,7 +6,7 @@
     "express-session": "^1.17.2",
     "mongodb": "^4.2.2",
     "mongoose": "^6.1.2",
-    "passport": "^0.5.2",
+    "passport": "^0.6.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^6.1.0"
   },
@@ -22,6 +22,5 @@
   },
   "author": "Palette Jack",
   "license": "ISC",
-  "devDependencies": {},
   "keywords": []
 }
